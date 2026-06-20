@@ -13,3 +13,4 @@ Thumbs.db
 # VS Code
 .vscode/
 ./ml_model/fake_sellers.csv
+./ml_model/*.pkl
