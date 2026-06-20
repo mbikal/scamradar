@@ -12,5 +12,8 @@ Thumbs.db
 
 # VS Code
 .vscode/
-./ml_model/fake_sellers.csv
-./ml_model/*.pkl
+# ML model large files
+ml_model/*.pkl
+ml_model/*.csv
+__pycache__/
+**/__pycache__/
