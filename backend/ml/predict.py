@@ -104,9 +104,9 @@ def preprocess_input(frontend_data):
     if 'seller_verified' in data and 'is_fb_verified' not in data:
         features['is_fb_verified'] = data['seller_verified']
 
-    # overwrite defaults with remaining frontend values
+    # overwrite defaults with remaining frontend values if they are not None
     for key, val in data.items():
-        if key in features:
+        if key in features and val is not None:
             features[key] = val
 
     df = pd.DataFrame([features])

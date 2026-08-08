@@ -15,5 +15,7 @@ Thumbs.db
 # ML model large files
 ml_model/*.pkl
 ml_model/*.csv
+backend/ml/fraud_model.pkl
+backend/ml/shap_explainer.pkl
 __pycache__/
 **/__pycache__/

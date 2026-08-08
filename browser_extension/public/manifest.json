@@ -20,12 +20,18 @@
     "128": "icons/icon128.png"
   },
 
-  "permissions": ["activeTab", "storage", "scripting"],
+  "permissions": ["activeTab", "storage", "scripting", "notifications"],
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
 
   "host_permissions": [
     "https://www.facebook.com/*",
     "https://www.instagram.com/*",
-    "https://www.tiktok.com/*"
+    "https://www.tiktok.com/*",
+    "http://localhost:3000/*"
   ],
 
   "content_scripts": [
