@@ -19,3 +19,9 @@ backend/ml/fraud_model.pkl
 backend/ml/shap_explainer.pkl
 __pycache__/
 **/__pycache__/
+
+# Documents / reports (not part of source)
+*.docx
+*.pdf
+*.md
+!README.md
